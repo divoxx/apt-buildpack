@@ -1,4 +1,4 @@
-api = "0.4"
+api = "0.10"
 
 [buildpack]
 id = "fagiani/apt"
@@ -10,6 +10,9 @@ keywords = ["apt", "packages", "ubuntu"]
 
 [[buildpack.licenses]]
 type = "MIT"
+
+[metadata]
+include-files = ["buildpack.toml", "bin/detect", "bin/build"]
 
 [[stacks]]
 id = "heroku-18"
